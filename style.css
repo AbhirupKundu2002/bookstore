@@ -262,6 +262,12 @@
   margin-top:0px;
   font-size:25px;
 }
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*add button*/
 .add{
   float:left;
   margin-left:10%;
@@ -273,18 +279,31 @@
   background-color:yellow;
   border-radius: 5px;
 }
-
-.add:focus{
-  display: "ADDED";
-  background-color: green;
-  text-transform: uppercase;
-} 
-
-
-.card:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+.add::after{
+  content:"ADD";
+  text-align: center;
+  width:100%;
+  line-height: 2;
+  display:contents;
 }
+.add::before{
+  content:"ADDED";
+  text-align: center;
+  width:100%;
+  line-height: 2;
+  display: none;
+}
+.add:focus::after{
+  display: none;
+}
+.add:focus::before{
+  display: contents;
+} 
+.add:focus{
+  background-color: green;
+}
+
+
 .buttons p{
   background-color: white;
   border: 1px solid black; 
