@@ -209,6 +209,7 @@
       color: white;
   }
 
+/*BestSellers*/
 
 #Bestsellers{
   width: 100vw;
@@ -217,18 +218,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-#recommended {
-
-    margin: 0 auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    grid-auto-rows: auto;
-    gap: 20px;
-    font-family: sans-serif;
-    padding-top: 30px;
 }
 
 #Bestsellers .card{
@@ -242,30 +231,11 @@
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: roboto;
   text-align: center;
-  
-
   transition: 0.5s ease;
   cursor: pointer;
   margin:30px;
 }
-#recommended .card {
-  display: grid;
-  margin: 0 auto;
-  max-width: 1000px;
-  grid-template-areas: "image" "text" "buttons";
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    grid-auto-rows: auto;
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  text-align: center;
-  
 
-  transition: 0.5s ease;
-  cursor: pointer;
-  margin:30px;
-}
 .card-image img{
   height: 20rem;
   width: 100%;
@@ -345,13 +315,37 @@
 
 
 /*Recommended*/
-
-#recommended{
+#recommended {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
   padding: 80px 30px 10px 30px;
   background-image: linear-gradient(to left,rgba(76, 211, 132, 0.796),rgba(143, 182, 111, 0.79));
   position: relative;
 }
 
+#recommended .card {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-template-areas: "image" "text" "buttons";
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+
+/*Card image,text,button properties same as before*/
 
 .search-bar{
   position: absolute;
